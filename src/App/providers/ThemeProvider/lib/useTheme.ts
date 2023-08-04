@@ -1,4 +1,4 @@
-import {LOACAL_STORAGE_THEME_KEY, Theme, ThemeContext} from "./ThemeContext";
+import {LOACAL_STORAGE_THEME_KEY, Theme, ThemeContext} from "../theme/ThemeContext";
 import {useContext} from "react";
 
 interface UseThemeResult {
