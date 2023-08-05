@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import 'reset';
 @import "./variables/global";
 @import "./themes/dark";
@@ -13,4 +14,13 @@ body {
   color: var(--primary-color);
 
   min-height: 100vh;
+}
+
+.main {
+  display: flex;
+}
+
+.page-wrapper {
+  flex-grow: 1;
+  padding: 20px;
 }
