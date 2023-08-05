@@ -43,9 +43,22 @@ export function buildLoaders({isDev}: BuildOptions): webpack.RuleSetRule[] {
     ],
   }
 
+  // const urlLoader = {
+  //   test: /\.(png|jpg|gif)$/i,
+  //   use: [
+  //     {
+  //       loader: 'url-loader',
+  //       options: {
+  //         limit: 8192
+  //       }
+  //     }
+  //   ]
+  // }
+
   return [
     typescriptLoader,
     cssLoader,
-    svgLoader
+    svgLoader,
+    fileLoader
   ]
 }
