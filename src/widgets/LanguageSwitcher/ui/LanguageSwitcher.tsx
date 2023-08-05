@@ -1,7 +1,7 @@
 import React from 'react';
 import {Button, ThemeButton} from "shared/ui/Button/Button";
 import {useTranslation} from "react-i18next";
-import IconTranslate from 'shared/assets/language.svg';
+import IconTranslate from 'shared/assets/icon/language.svg';
 import cls from './LanguageSwitcher.module.scss';
 
 interface LanguageSwitcherProps {

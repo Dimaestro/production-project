@@ -1,7 +1,7 @@
 import React from 'react';
 import cls from './ThemeSwitcher.module.scss';
 import {useTheme} from "App/providers/ThemeProvider";
-import Icon from 'shared/assets/day-and-night-icon.svg';
+import Icon from 'shared/assets/icon/day-and-night-icon.svg';
 import {Button, ThemeButton} from "shared/ui/Button/Button";
 
 interface ThemeSwitcherProps {
