@@ -1,22 +1,25 @@
 import React from 'react';
-import cls from './ThemeSwitcher.module.scss';
-import {useTheme} from 'App/providers/ThemeProvider';
+import { useTheme } from 'App/providers/ThemeProvider';
 import Icon from 'shared/assets/icon/day-and-night-icon.svg';
-import {Button, ThemeButton} from 'shared/ui/Button/Button';
+import { Button, ThemeButton } from 'shared/ui/Button/Button';
+import cls from './ThemeSwitcher.module.scss';
 
-type ThemeSwitcherProps = {
-	className?: string;
-};
-export const ThemeSwitcher: React.FC<ThemeSwitcherProps> = ({className}) => {
-	const {toggleTheme} = useTheme();
+type ThemeSwitcherProps = { className ?: string; };
+export const ThemeSwitcher
+  : React.FC<ThemeSwitcherProps> = ({ className }) => {
+    const { toggleTheme } = useTheme();
 
-	return (
-		<Button
-			theme={ThemeButton.CLEAR}
-			type='button'
-			onClick={toggleTheme}
-		>
-			<Icon width={30} height={30} className={cls.ThemeSwitcherIcon}/>
-		</Button>
-	);
-};
+    return (
+      <Button
+        theme={ThemeButton.CLEAR}
+        type="button"
+        onClick={toggleTheme}
+      >
+        <Icon
+          width={30}
+          height={30}
+          className={cls.ThemeSwitcherIcon}
+        />
+      </Button>
+    );
+  };
