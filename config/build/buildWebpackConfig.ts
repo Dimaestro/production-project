@@ -7,10 +7,11 @@ import { buildDevServer } from './buildDevServer';
 
 export function buildWebpackConfig(options: BuildOptions): webpack.Configuration {
   const { mode, paths, isDev } = options;
+
   return {
     mode,
     entry: paths.entry,
-    devtool: isDev ? 'inline-source-map' : undefined,
+    devtool: isDev ? 'inline-source-map' : false,
     devServer: isDev ? buildDevServer(options) : undefined,
     output: {
       filename: '[name].[contenthash].js',

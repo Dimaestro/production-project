@@ -1,12 +1,12 @@
 import React, { useMemo, useState } from 'react';
 import {
-  LOACAL_STORAGE_THEME_KEY,
+  LOCAL_STORAGE_THEME_KEY,
   Theme,
   ThemeContext,
 } from '../theme/ThemeContext';
 
 const defaultTheme = localStorage
-  .getItem(LOACAL_STORAGE_THEME_KEY) as Theme || Theme.LIGHT;
+  .getItem(LOCAL_STORAGE_THEME_KEY) as Theme || Theme.LIGHT;
 
 type InterfaceProps = { children: React.ReactNode; };
 const ThemeProvider: React.FC<InterfaceProps> = ({ children }) => {

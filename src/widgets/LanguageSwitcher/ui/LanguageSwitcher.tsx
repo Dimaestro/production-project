@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import IconTranslate from 'shared/assets/icon/language.svg';
 
 type LanguageSwitcherProps = {
-	className?: string;
+  className?: string;
 };
 
 export const LanguageSwitcher

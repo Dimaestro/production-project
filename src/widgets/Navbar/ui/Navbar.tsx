@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 import cls from './Navbar.module.scss';
 
 type NavbarProps = {
-	className?: string;
+  className?: string;
 };
 export const Navbar: React.FC<NavbarProps> = ({ className }) => {
   const { t } = useTranslation();
