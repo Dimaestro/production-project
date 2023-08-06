@@ -1,6 +1,6 @@
 {
   "parser": "@typescript-eslint/parser",
-  "extends": ["airbnb"],
+  "extends": ["airbnb", "plugin:i18next/recommended"],
   "rules": {
     "indent": ["error", 2],
     "max-len": [
@@ -21,9 +21,13 @@
     "no-shadow": "off",
     "no-undef": "warn",
     "import/no-extraneous-dependencies": "warn",
-    "no-underscore-dangle": "off"
+    "no-underscore-dangle": "off",
+    "i18next/no-literal-string": ["error", {
+      "markupOnly": true
+    }]
   },
   "globals": {
     "__IS_DEV__": true
-  }
+  },
+  "plugins": ["react", "i18next"]
 }

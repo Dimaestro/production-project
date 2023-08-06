@@ -5,6 +5,7 @@ import {
   LanguageSwitcher,
 } from 'widgets/LanguageSwitcher/ui/LanguageSwitcher';
 
+import { useTranslation } from 'react-i18next';
 import cls from './Sidebar.module.scss';
 
 type SidebarProps = {
@@ -15,7 +16,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ className }) => {
   const toggleButtonSidebar = () => {
     setCollapsed((prev) => !prev);
   };
-
+  const { t } = useTranslation();
   return (
     <div className={
       classNames(
@@ -25,8 +26,12 @@ export const Sidebar: React.FC<SidebarProps> = ({ className }) => {
       )
     }
     >
-      <button type="button" onClick={toggleButtonSidebar}>
-        toggle
+      <button
+        type="button"
+        aria-label="collapsed button"
+        onClick={toggleButtonSidebar}
+      >
+        {t('Кнопка')}
       </button>
       <ul className={cls.switchers}>
         <li>

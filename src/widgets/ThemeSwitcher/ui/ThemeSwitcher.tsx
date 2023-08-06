@@ -2,7 +2,6 @@ import React from 'react';
 import { useTheme } from 'App/providers/ThemeProvider';
 import Icon from 'shared/assets/icon/day-and-night-icon.svg';
 import { Button, ThemeButton } from 'shared/ui/Button/Button';
-import cls from './ThemeSwitcher.module.scss';
 
 type ThemeSwitcherProps = { className ?: string; };
 export const ThemeSwitcher
@@ -18,7 +17,6 @@ export const ThemeSwitcher
         <Icon
           width={30}
           height={30}
-          className={cls.ThemeSwitcherIcon}
         />
       </Button>
     );
